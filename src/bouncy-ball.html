@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bouncy Ball</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #e30048;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    button:hover {
+      background-color: #f31159 !important;
+    }
+
+    button:active {
+      background-color: #cb0242 !important;
+    }
+
+    button:disabled {
+      background-color: #ccc !important;
+      border-bottom: 3px solid #bbb !important;
+    }
+
+    input:disabled {
+      color: #ccc !important;
+    }
+
+    input:hover {
+      background-color: #f6f6f6 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="color:white;display:flex">
+    <!-- <div style="display: inline-block; color:#fad300;font-size:1.5rem;margin-top:-6px;margin-right:-7px;">&#9686;
+    </div> -->
+    <div style="display: inline-block; color:#fad300;font-size:1.1rem;margin-top:-1.5px;margin-right:-6.5px;">&#9686;
+    </div>
+    <div
+      style="display: inline-block; color:#fad300;font-size:1.1rem;margin-top:-1.5px;margin-left:-8.5px;margin-right:2px;">
+      &#9687;
+    </div>
+
+    <div style="display: inline-block;">Bouncy</div>
+    <div style="display:inline-block; margin-left:1px; color:#fad300; font-weight: 600;">Ball</div>
+  </div>
+  <div id="container" style="width:1000px;margin:auto;position:relative;">
+    <div style="position:absolute;top:7400px;left:100px;color:white;font-size:4rem;">
+      <div style="font-weight:bold;color:#fad300">Congratulations!</div>
+      You got them all right!
+    </div>
+    <script type="text/javascript" src="../gen/bouncy-ball.js"></script>
+  </div>
+</body>
+
+</html>

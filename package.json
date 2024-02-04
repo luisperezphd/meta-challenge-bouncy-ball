@@ -1,0 +1,20 @@
+{
+  "name": "facebook-bounch-ball-challenge",
+  "version": "1.0.0",
+  "description": "**For this challenge, you need to implement a form with a bouncy ball that follows you around as you fill it and implements the \"Squash & Stretch\" technique from [Disney's 12 Principles of Animation](https://en.wikipedia.org/wiki/Twelve_basic_principles_of_animation). The only restriction on the form is that there must be at least 5 fields to fill out.** Filling out forms is a big part of people's day but is also very boring, hopefully you can use this challenge as a way to make turn it into fun and playful activity!",
+  "main": "bouncy-ball.js",
+  "scripts": {
+    "build:watch": "concurrently npm:build:watch:bouncy-ball",
+    "build:watch:bouncy-ball": "npx esbuild --bundle src/bouncy-ball.ts --outfile=gen/bouncy-ball.js --watch --sourcemap",
+    "x:build:watch:bouncy-ball2": "npx esbuild --bundle src/bouncy-ball2.ts --outfile=gen/bouncy-ball2.js --watch --sourcemap",
+    "x:build:watch:scrap": "npx esbuild --bundle src/scrap.ts --outfile=gen/scrap.js --watch --sourcemap",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "esbuild": "^0.20.0"
+  }
+}
